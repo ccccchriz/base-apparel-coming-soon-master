@@ -35,17 +35,23 @@
             and our launch deals.
           </p>
           <form action="" novalidate id="info-form" class="info__form">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email Address"
-              size="1"
-              class="info__input"
-            />
-            <button type="submit" class="info__submit">
-              <img src="assets/images/icon-arrow.svg" alt="" />
-            </button>
+            <div class="info__border">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+                size="1"
+                class="info__input"
+                aria-label="Email Address"
+              />
+              <button type="submit" class="info__submit">
+                <img src="assets/images/icon-arrow.svg" alt="submit" />
+              </button>
+            </div>
+            <div class="info__error" id="form-error" aria-live="assertive">
+              fasf
+            </div>
           </form>
         </div>
       </section>

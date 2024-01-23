@@ -160,23 +160,37 @@ main {
 }
 
 .info__form {
+  display: grid;
+  gap: 0.5rem;
+  justify-items: center;
+  align-items: stretch;
+  margin-bottom: 3rem;
+}
+
+.info__border {
+  width: 100%;
   display: flex;
-  justify-content: center;
   align-items: stretch;
   border: 1px solid var(--clr-primary-red);
   border-radius: 50rem;
-  margin-bottom: 3rem;
 }
 
 .info__input {
   background-color: transparent;
   border: none;
+  flex-grow: 1;
   padding: 0.75rem 1rem;
   width: 100%;
 }
 
 .info__input::placeholder {
   color: var(--clr-primary-red);
+}
+
+.info__error {
+  margin-left: 2rem;
+  justify-self: flex-start;
+  color: var(--clr-primary-soft-red);
 }
 
 .info__submit {
